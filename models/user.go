@@ -19,5 +19,5 @@ type user struct {
 	deletedAt    time.Time          `json:"deleted_at"`
 	accessToken  string             `json:"access_token" validate:"required`
 	refreshToken string             `json:"refresh_token" validate:"required`
-	userType     string             `json:"user_type" validate:"required eq = ADMIN | USER`
+	userType     string             `json:"user_type" validate:"required eq = ADMIN | eq = USER`
 }
